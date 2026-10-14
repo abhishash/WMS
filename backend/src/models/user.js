@@ -25,6 +25,14 @@ const userSchema = mongoose.Schema(
       enum: ["admin", "manager", "staff"],
       default: "staff",
     },
+    resetPasswordToken: {
+      type: String,
+      default: null,
+    },
+    resetPasswordExpires: {
+      type: Date,
+      default: null,
+    },
   },
   {
     timestamps: true,
@@ -33,4 +41,4 @@ const userSchema = mongoose.Schema(
 );
 
 const User = mongoose.model("User", userSchema);
-export default User;  
+export default User;
