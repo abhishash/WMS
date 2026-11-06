@@ -14,7 +14,9 @@
     "generate:presets": "ts-node -P tsconfig.scripts.json src/scripts/generate-theme-presets.ts"
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx}": ["biome check --write --no-errors-on-unmatched"]
+    "*.{js,ts,jsx,tsx}": [
+      "biome check --write --no-errors-on-unmatched"
+    ]
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
@@ -23,8 +25,10 @@
     "@dnd-kit/react": "^0.5.0",
     "@fullcalendar/react": "^7.1.1",
     "@hookform/resolvers": "^5.9.1",
+    "@reduxjs/toolkit": "^2.13.0",
     "@shadcn/react": "^0.3.1",
     "@tanstack/react-table": "^9.2.6",
+    "axios": "^1.21.0",
     "class-variance-authority": "^0.7.1",
     "cmdk": "^1.1.1",
     "cn": "^0.4.0",
@@ -41,6 +45,7 @@
     "react-day-picker": "^10.0.2",
     "react-dom": "^19.3.0",
     "react-hook-form": "^7.89.0",
+    "react-redux": "^9.3.0",
     "react-resizable-panels": "^4.14.2",
     "recharts": "^3.8.0",
     "shadcn": "^4.21.3",

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Command } from "lucide-react";
 import type { Metadata } from "next";
 
-import { LoginForm } from "../../_components/login-form";
+import  LoginForm from "../../_components/login-form";
 import { GoogleButton } from "../../_components/social-auth/google-button";
 
 export const metadata: Metadata = {
